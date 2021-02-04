@@ -1,6 +1,7 @@
 package com.example.roomdatabase;
 
 import android.content.Context;
+import android.widget.Toast;
 
 import androidx.room.Room;
 
@@ -17,5 +18,8 @@ public class StudentRepository {
                 context,StudentDatabase.class,
                 "databaseGame.db"
         ).build();
+
+
+        Toast.makeText(context,"Database Creation Sucessful",Toast.LENGTH_SHORT).show();
     }
 }
